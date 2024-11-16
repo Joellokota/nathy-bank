@@ -8,6 +8,7 @@ class NathyGatewayApplicationTests {
 
     @Test
     void contextLoads() {
+
     }
 
 }
