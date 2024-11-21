@@ -1,0 +1,9 @@
+services:
+  oic-backend:
+    image: joellokota/nathy-customer:0.0.1-SNAPSHOT
+    container_name: nathy-customer
+    restart: always
+    ports:
+      - '9091:9091'
+    expose:
+      - '9091'

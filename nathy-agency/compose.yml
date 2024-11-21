@@ -1,0 +1,9 @@
+services:
+  oic-backend:
+    image: joellokota/nathy-agency:0.0.1-SNAPSHOT
+    container_name: nathy-agency
+    restart: always
+    ports:
+      - '9092:9092'
+    expose:
+      - '9092'
