@@ -56,7 +56,6 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
     <build>
         <plugins>
             <plugin>
@@ -64,7 +63,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <image>
-                        <name>joellokota/nathy-bank_nathy-discovery:${project.version}</name>
+                        <name>joellokota/nathy-discovery:${project.version}</name>
                         <env>
                             <BP_JVM_VERSION>17</BP_JVM_VERSION>
                         </env>
@@ -79,5 +78,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
