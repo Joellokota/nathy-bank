@@ -62,6 +62,20 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <image>
+                        <name>joellokota/nathy-bank_nathy-discovery:${project.version}</name>
+                        <env>
+                            <BP_JVM_VERSION>17</BP_JVM_VERSION>
+                        </env>
+                    </image>
+                    <docker>
+                        <publishRegistry>
+                            <username>${docker.publishRegistry.username}</username>
+                            <password>${docker.publishRegistry.password}</password>
+                        </publishRegistry>
+                    </docker>
+                </configuration>
             </plugin>
         </plugins>
     </build>
