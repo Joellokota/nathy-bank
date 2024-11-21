@@ -1,9 +1,0 @@
-services:
-  oic-backend:
-    image: joellokota/nathy-discovery:0.0.1-SNAPSHOT
-    container_name: nathy-discovery
-    restart: always
-    ports:
-      - '8761:8761'
-    expose:
-      - '8761'

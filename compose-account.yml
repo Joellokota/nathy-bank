@@ -1,9 +1,0 @@
-services:
-  oic-backend:
-    image: joellokota/nathy-account:0.0.1-SNAPSHOT
-    container_name: nathy-account
-    restart: always
-    ports:
-      - '9093:9093'
-    expose:
-      - '9093'

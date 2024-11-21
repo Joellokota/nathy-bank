@@ -1,0 +1,57 @@
+services:
+  nathy-gateway:
+    image: joellokota/nathy-gateway:0.0.1-SNAPSHOT
+    container_name: nathy-gateway
+    restart: always
+    ports:
+      - '9094:9094'
+    expose:
+      - '9094'
+    networks:
+      - backend
+  nathy-discovery:
+    image: joellokota/nathy-discovery:0.0.1-SNAPSHOT
+    container_name: nathy-discovery
+    restart: always
+    ports:
+      - '8761:8761'
+    expose:
+      - '8761'
+    networks:
+      - backend
+  nathy-customer:
+    image: joellokota/nathy-customer:0.0.1-SNAPSHOT
+    container_name: nathy-customer
+    restart: always
+    ports:
+      - '9091:9091'
+    expose:
+      - '9091'
+    networks:
+      - backend
+  nathy-agency:
+    image: joellokota/nathy-agency:0.0.1-SNAPSHOT
+    container_name: nathy-agency
+    restart: always
+    ports:
+      - '9092:9092'
+    expose:
+      - '9092'
+    networks:
+      - backend
+  nathy-account:
+    image: joellokota/nathy-account:0.0.1-SNAPSHOT
+    container_name: nathy-account
+    restart: always
+    ports:
+      - '9093:9093'
+    expose:
+      - '9093'
+    networks:
+      - backend
+
+networks:
+  backend:
+    name: backend
+    driver: bridge
+    external: true
