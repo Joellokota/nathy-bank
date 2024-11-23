@@ -4,9 +4,9 @@ services:
     container_name: nathy-gateway
     restart: always
     ports:
-      - '9094:9094'
+      - '8084:8084'
     expose:
-      - '9094'
+      - '8084'
     networks:
       - backend
   nathy-discovery:
@@ -24,9 +24,9 @@ services:
     container_name: nathy-customer
     restart: always
     ports:
-      - '9091:9091'
+      - '8081:8081'
     expose:
-      - '9091'
+      - '8081'
     networks:
       - backend
   nathy-agency:
@@ -34,9 +34,9 @@ services:
     container_name: nathy-agency
     restart: always
     ports:
-      - '9092:9092'
+      - '8082:8082'
     expose:
-      - '9092'
+      - '8082'
     networks:
       - backend
   nathy-account:
@@ -44,9 +44,9 @@ services:
     container_name: nathy-account
     restart: always
     ports:
-      - '9093:9093'
+      - '8083:8083'
     expose:
-      - '9093'
+      - '8083'
     networks:
       - backend
 
