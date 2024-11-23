@@ -1,0 +1,19 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: r_accounts
+          uri:
+            http://nathy-account:9092/
+          predicates:
+            - Path:/list-accounts/**
+        - id: r_customers
+          uri:
+            http://nathy-customer:9091/
+          predicates:
+            - Path:/list-customers/**
+        - id: r_agencies
+          uri:
+            http://nathy-agency:9093/
+          predicates:
+            - Path:/list-agencies/**
