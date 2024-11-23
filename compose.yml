@@ -50,7 +50,6 @@ services:
     networks:
       - backend
 
-
 networks:
   backend:
     name: backend
