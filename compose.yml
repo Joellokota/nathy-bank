@@ -9,16 +9,6 @@ services:
       - '8084'
     networks:
       - backend
-  nathy-discovery:
-    image: joellokota/nathy-discovery:0.0.1-SNAPSHOT
-    container_name: nathy-discovery
-    restart: always
-    ports:
-      - '8761:8761'
-    expose:
-      - '8761'
-    networks:
-      - backend
   nathy-customer:
     image: joellokota/nathy-customer:0.0.1-SNAPSHOT
     container_name: nathy-customer
@@ -49,7 +39,16 @@ services:
       - '8083'
     networks:
       - backend
-
+#  nathy-discovery:
+#    image: joellokota/nathy-discovery:0.0.1-SNAPSHOT
+#    container_name: nathy-discovery
+#    restart: always
+#    ports:
+#      - '8761:8761'
+#    expose:
+#      - '8761'
+#    networks:
+#      - backend
 networks:
   backend:
     name: backend
