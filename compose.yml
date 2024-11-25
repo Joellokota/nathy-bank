@@ -5,7 +5,7 @@ services:
     restart: always
     environment:
       - JAVA_TOOL_OPTIONS=
-        - Xss200k
+        -Xss400k
     ports:
       - '8084:8084'
     expose:
@@ -18,7 +18,7 @@ services:
     restart: always
     environment:
       - JAVA_TOOL_OPTIONS=
-        - Xss200k
+        -Xss400k
     ports:
       - '8081:8081'
     expose:
@@ -31,7 +31,7 @@ services:
     restart: always
     environment:
       - JAVA_TOOL_OPTIONS=
-        - Xss200k
+        -Xss400k
     ports:
       - '8082:8082'
     expose:
@@ -44,7 +44,7 @@ services:
     restart: always
     environment:
       - JAVA_TOOL_OPTIONS=
-        - Xss200k
+          -Xss400k
     ports:
       - '8083:8083'
     expose:
