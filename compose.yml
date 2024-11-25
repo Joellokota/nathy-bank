@@ -3,6 +3,9 @@ services:
     image: joellokota/nathy-gateway:0.0.1-SNAPSHOT
     container_name: nathy-gateway
     restart: always
+    environment:
+      - JAVA_TOOL_OPTIONS=
+        - Xss200k
     ports:
       - '8084:8084'
     expose:
@@ -13,6 +16,9 @@ services:
     image: joellokota/nathy-customer:0.0.1-SNAPSHOT
     container_name: nathy-customer
     restart: always
+    environment:
+      - JAVA_TOOL_OPTIONS=
+        - Xss200k
     ports:
       - '8081:8081'
     expose:
@@ -23,6 +29,9 @@ services:
     image: joellokota/nathy-agency:0.0.1-SNAPSHOT
     container_name: nathy-agency
     restart: always
+    environment:
+      - JAVA_TOOL_OPTIONS=
+        - Xss200k
     ports:
       - '8082:8082'
     expose:
@@ -33,6 +42,9 @@ services:
     image: joellokota/nathy-account:0.0.1-SNAPSHOT
     container_name: nathy-account
     restart: always
+    environment:
+      - JAVA_TOOL_OPTIONS=
+        - Xss200k
     ports:
       - '8083:8083'
     expose:
