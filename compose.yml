@@ -1,19 +1,4 @@
 services:
-  nathy-gateway:
-    image: joellokota/nathy-gateway:0.0.2-SNAPSHOT
-    container_name: nathy-gateway
-    restart: always
-    environment:
-      - JAVA_TOOL_OPTIONS=-Xmx120000K
-    deploy:
-      resources:
-        limits:
-          memory: 800m
-    ports:
-      - '9094:9094'
-    expose:
-      - '9094'
-
   nathy-customer:
     image: joellokota/nathy-customer:0.0.2-SNAPSHOT
     container_name: nathy-customer
@@ -58,7 +43,20 @@ services:
       - '9093:9093'
     expose:
       - '9093'
-
+#  nathy-gateway:
+#    image: joellokota/nathy-gateway:0.0.2-SNAPSHOT
+#    container_name: nathy-gateway
+#    restart: always
+#    environment:
+#      - JAVA_TOOL_OPTIONS=-Xmx120000K
+#    deploy:
+#      resources:
+#        limits:
+#          memory: 800m
+#    ports:
+#      - '9094:9094'
+#    expose:
+#      - '9094'
 #  nathy-discovery:
 #    image: joellokota/nathy-discovery:0.0.1-SNAPSHOT
 #    container_name: nathy-discovery
