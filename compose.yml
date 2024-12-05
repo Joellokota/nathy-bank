@@ -11,8 +11,6 @@ services:
           memory: 800m
     ports:
       - '9091:9091'
-    expose:
-      - '9091'
 
   nathy-agency:
     image: joellokota/nathy-agency:0.0.2-SNAPSHOT
@@ -26,8 +24,6 @@ services:
           memory: 800m
     ports:
       - '9092:9092'
-    expose:
-      - '9092'
 
   nathy-account:
     image: joellokota/nathy-account:0.0.2-SNAPSHOT
@@ -41,8 +37,7 @@ services:
           memory: 800m
     ports:
       - '9093:9093'
-    expose:
-      - '9093'
+
 #  nathy-gateway:
 #    image: joellokota/nathy-gateway:0.0.2-SNAPSHOT
 #    container_name: nathy-gateway
