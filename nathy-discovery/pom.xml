@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.andyalex</groupId>
     <artifactId>nathy-discovery</artifactId>
-    <version>0.0.2-SNAPSHOT</version>
+    <version>0.0.3-SNAPSHOT</version>
     <name>nathy-discovery</name>
     <description>nathy-discovery</description>
     <url/>

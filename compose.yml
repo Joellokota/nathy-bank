@@ -1,6 +1,6 @@
 services:
   nathy-customer:
-    image: joellokota/nathy-customer:0.0.2-SNAPSHOT
+    image: joellokota/nathy-customer:0.0.3-SNAPSHOT
     container_name: nathy-customer
     restart: always
     environment:
@@ -13,7 +13,7 @@ services:
       - '9091:9091'
 
   nathy-agency:
-    image: joellokota/nathy-agency:0.0.2-SNAPSHOT
+    image: joellokota/nathy-agency:0.0.3-SNAPSHOT
     container_name: nathy-agency
     restart: always
     environment:
@@ -26,7 +26,7 @@ services:
       - '9093:9093'
 
   nathy-account:
-    image: joellokota/nathy-account:0.0.2-SNAPSHOT
+    image: joellokota/nathy-account:0.0.3-SNAPSHOT
     container_name: nathy-account
     restart: always
     environment:
@@ -39,7 +39,7 @@ services:
       - '9092:9092'
 
   nathy-gateway:
-    image: joellokota/nathy-gateway:0.0.2-SNAPSHOT
+    image: joellokota/nathy-gateway:0.0.3-SNAPSHOT
     container_name: nathy-gateway
     restart: always
     environment:
