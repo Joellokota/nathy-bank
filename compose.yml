@@ -23,7 +23,7 @@ services:
         limits:
           memory: 800m
     ports:
-      - '9092:9092'
+      - '9093:9093'
 
   nathy-account:
     image: joellokota/nathy-account:0.0.2-SNAPSHOT
@@ -36,20 +36,21 @@ services:
         limits:
           memory: 800m
     ports:
-      - '9093:9093'
+      - '9092:9092'
 
-#  nathy-gateway:
-#    image: joellokota/nathy-gateway:0.0.2-SNAPSHOT
-#    container_name: nathy-gateway
-#    restart: always
-#    environment:
-#      - JAVA_TOOL_OPTIONS=-Xmx120000K
-#    deploy:
-#      resources:
-#        limits:
-#          memory: 800m
-#    ports:
-#      - '9094:9094'
+  nathy-gateway:
+    image: joellokota/nathy-gateway:0.0.2-SNAPSHOT
+    container_name: nathy-gateway
+    restart: always
+    environment:
+      - JAVA_TOOL_OPTIONS=-Xmx120000K
+    deploy:
+      resources:
+        limits:
+          memory: 800m
+    ports:
+      - '9090:9090'
+
 #    expose:
 #      - '9094'
 #  nathy-discovery:
