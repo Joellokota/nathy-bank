@@ -45,8 +45,9 @@ services:
     ports:
       - '80:80'
     volumes:
-      - ../nathy-config/agency-nathy.conf:/etc/nginx/conf.d/agency-nathy.conf
-      - ../nathy-config/customer-nathy.conf:/etc/nginx/conf.d/customer-nathy.conf
+      - /opt/applications/nathy-bank/nathy-config/account-nathy.conf:/etc/nginx/conf.d/account-nathy.conf
+      - /opt/applications/nathy-bank/nathy-config/agency-nathy.conf:/etc/nginx/conf.d/agency-nathy.conf
+      - /opt/applications/nathy-bank/nathy-config/customer-nathy.conf:/etc/nginx/conf.d/customer-nathy.conf
 
 #  nathy-gateway:
 #    image: joellokota/nathy-gateway:0.0.3-SNAPSHOT
