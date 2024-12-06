@@ -45,7 +45,6 @@ services:
     ports:
       - '80:80'
     volumes:
-      - ../nathy-config/account-nathy.conf:/etc/nginx/conf.d/account-nathy.conf
       - ../nathy-config/agency-nathy.conf:/etc/nginx/conf.d/agency-nathy.conf
       - ../nathy-config/customer-nathy.conf:/etc/nginx/conf.d/customer-nathy.conf
 
