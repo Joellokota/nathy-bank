@@ -10,6 +10,7 @@
         <option value="$PROJECT_DIR$/nathy-customer/pom.xml" />
         <option value="$PROJECT_DIR$/nathy-discovery/pom.xml" />
         <option value="$PROJECT_DIR$/nathy-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/nathy-poc/pom.xml" />
       </list>
     </option>
   </component>
