@@ -38,6 +38,7 @@ services:
     ports:
       - '9092:9092'
 
+
   nathy-proxy:
     image: nginx:1.27.0-alpine
     container_name: nathy-proxy
